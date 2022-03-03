@@ -2,59 +2,133 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-    <header id="header" class="container-fluid pb-2" style="margin-bottom: 0.5rem;">
-        <h1 class="text-center">Progats</h1>
-        <nav class="d-flex justify-content-between">
-            <a>Equipo</a>
-            <a>Servicios</a>
-            <a>Contacto</a>
-        </nav>
-    </header>
-<!--     <section>
-        <p>¡Un hogar para cada gatito!</p>
-    </section> -->
-    <section>
-        <h2 class="text-center" style="0.5rem">Equipo</h2>
-        <div style="gap:1rem" class="d-flex flex-column align-items-center mb-">
-            <article id="card" class="d-flex flex-column align-items-center">
-                <h3>Patricia</h3>
-                <div><img class="card-img-top" src="img/patricia.png" alt="caricatura patricia"></div>
-                <p>Fundadora</p>
-            </article>
+<body class="container-fluid">
+  <header class="bg-info">
 
-            <article id="card" class="d-flex flex-column align-items-center">
-                <h3>Verónica</h3>
-                <div><img class="card-img-top" src="img/veronica.png" alt="caricatura veronica"></div>
-                <p>Voluntaria</p>
-            </article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 
-            <article id="card" >
-                <h3>Edurne</h3>
-                <div><img class="card-img-top" src="img/edurne.png" alt="caricatura Edurne"></div>
-                <p>Voluntaria</p>
-            </article>
+    <nav class="menu navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>PROGATS</h1>
+        </a>
+
+        <button class="navbar-toggler" style="margin-right:5px !important;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse top_nav" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Equipo</a>
+            </li>
+            <li class="nav-item "><a href="#" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item "><a href="#" class="nav-link">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </section>
-<!--     <footer>
-        <p>PROGAT es una asociación sín ánimo de lucro. Apóyanos con <strong>
-                <a>una
-                    donación</a>
-            </strong>. ¡Muchas
-            gracias!</p>
-    </footer>
-    <div id="swipeUp">
-        <a href="#top"><img src="./img/paw.png" alt="swipe up arrow"></a>
+      </div>
+    </nav>
+  </header>
+
+<!-- Info? -->
+<div class="hero">
+  <h2 class="hero--text text-white text-center mb-3">Encuentra tu mascota ideal</h2>
+  <h3 class="hero--text text-white text-center mb-3">Adopta Hoy</h3>
+  <h4 class="hero--text text-white text-center">¡Un hogar para cada gatito!</h4>
+</div>
+
+<section class="gatosAdoptas">
+  <h2 class="text-center text-primary">Hay <span class="text-warning">2</span> gatos en adopción ahora mismo</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cat-blanket.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark">Sir Pounce-a-lot</h5>
+          <p class="text-dark">3 años</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="img/two-cats.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark">Frumpkin & Mitzi</h5>
+          <p class="text-dark">4 & 6 años</p>
+        </div>
+      </div>
     </div>
- -->
-    
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+
+<!-- equipo -->
+  <section class="d-flex flex-column align-items-center">
+    <h2>Equipo</h2>
+    <div class="equipo--miembros d-flex">
+      <div class="equipo card d-flex align-items-center mb-2 m" style="width: 18rem;">
+        <img src="img/patricia.png" class="card-img-top" alt="..." style="height: 7rem; width: 7rem;">
+        <div class="card-body">
+          <h5 class="card-title">Patricia</h5>
+          <p class="card-text">Fundadora</p>
+          <a href="#" class="btn btn-primary">Contacta</a>
+        </div>
+      </div>
+
+      <div class="equipo card d-flex align-items-center mb-2" style="width: 18rem;">
+        <img src="img/veronica.png" class="card-img-top" alt="..." style="height: 7rem; width: 7rem;">
+        <div class="card-body">
+          <h5 class="card-title">Veronica</h5>
+          <p class="card-text">Voluntaria</p>
+          <a href="#" class="btn btn-primary">Contacta</a>
+        </div>
+      </div>
+
+      <div class="equipo card d-flex align-items-center mb-2" style="width: 18rem;">
+        <img src="img/edurne.png" class="card-img-top" alt="..." style="height: 7rem; width: 7rem;">
+        <div class="card-body">
+          <h5 class="card-title">Edurne</h5>
+          <p class="card-text">Voluntaria</p>
+          <a href="#" class="btn btn-primary">Contacta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-info m-0 p-1">
+    <p class="text-center">PROGAT es una asociación sín ánimo de lucro. Apóyanos con <strong>
+        <a>una
+          donación</a>
+      </strong>. ¡Muchas
+      gracias!</p>
+
+
+  </footer>
+
 </body>
-https://www.petfinder.com/
+<!-- https://www.petfinder.com/ -->
+
 </html>

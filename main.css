@@ -13,11 +13,26 @@ body {
 
 }
 
-#header {
-  background: var(--bg-secondary);
-  color: var(--primary);
+/* Selector por Clase */
+.hero {
+  background: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/01_%C2%BFQu%C3%A9-puedo-hacer-si-mi-gato-est%C3%A1-triste-.png?itok=cOA5aYW-") no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 1rem;
+  min-width: 668px
+}
+.hero--text{
+  text-shadow: 2px 2px black;
 }
 
-#card {
-    
+.equipo--miembros{
+  gap: 2rem;
+}
+
+@media (min-width: 992px){
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+}
 }
