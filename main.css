@@ -19,7 +19,6 @@ body {
   background-size: contain;
   background-position: center;
   padding: 1rem;
-  min-width: 668px
 }
 .hero--text{
   text-shadow: 2px 2px black;
