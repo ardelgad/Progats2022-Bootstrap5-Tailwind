@@ -1,12 +1,23 @@
 /* pseudo selectores y otros especiales */
 :root {
-  --primary: #f2b366;
+  --primary: #26d303;
   --secondary: #3f2f21;
-  --bg-primary: rgba(190, 183, 171, 0.3);
+  --bg-primary: rgba(202, 187, 97, 0.295);
+  --bg-secondary: rgba(33, 34, 33, 0.493);
 }
 
 /* Selectores por Tag */
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#header {
+  background: var(--bg-secondary);
+  color: var(--primary);
+}
+
+#card {
+    
 }
